@@ -1,0 +1,211 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.2.0/schema.json",
+  "name": "5e37e3c84a1eb6b3b167",
+  "position": {
+    "x": 10,
+    "y": 0,
+    "z": 0,
+    "height": 300,
+    "width": 348.57142857142861
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Ansat"
+                    }
+                  },
+                  "Property": "AnsatID"
+                }
+              },
+              "queryRef": "CountNonNull(Ansat.AnsatID)",
+              "nativeQueryRef": "AnsatID"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Ansat"
+                    }
+                  },
+                  "Property": "Fornavn"
+                }
+              },
+              "queryRef": "Ansat.Fornavn",
+              "nativeQueryRef": "Fornavn"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Ansat"
+                    }
+                  },
+                  "Property": "Efternavn"
+                }
+              },
+              "queryRef": "Ansat.Efternavn",
+              "nativeQueryRef": "Efternavn"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Afdeling"
+                    }
+                  },
+                  "Property": "Navn"
+                }
+              },
+              "queryRef": "Afdeling.Navn",
+              "nativeQueryRef": "Navn"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Aggregation": {
+                "Expression": {
+                  "Column": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Entity": "Ansat"
+                      }
+                    },
+                    "Property": "AnsatID"
+                  }
+                },
+                "Function": 5
+              }
+            },
+            "direction": "Descending"
+          }
+        ]
+      }
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "fb1e791c3653c5504781",
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Ansat"
+                  }
+                },
+                "Property": "AnsatID"
+              }
+            },
+            "Function": 5
+          }
+        },
+        "type": "Advanced",
+        "howCreated": "User"
+      },
+      {
+        "name": "b6eb4b36987beed8cddd",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Ansat"
+              }
+            },
+            "Property": "Efternavn"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      },
+      {
+        "name": "5fb3a621b4385542e4a3",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Ansat"
+              }
+            },
+            "Property": "Fornavn"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      },
+      {
+        "name": "87a72f134d462a09e1b0",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Ansat"
+              }
+            },
+            "Property": "Fornavn"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "ed14f0b7ea4920c7a4c0",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Ansat"
+              }
+            },
+            "Property": "Efternavn"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "fc971eb2d2db78b5040c",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Afdeling"
+              }
+            },
+            "Property": "Navn"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "e147c6784e034a372748",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Ansat"
+              }
+            },
+            "Property": "AnsatID"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
+  }
+}

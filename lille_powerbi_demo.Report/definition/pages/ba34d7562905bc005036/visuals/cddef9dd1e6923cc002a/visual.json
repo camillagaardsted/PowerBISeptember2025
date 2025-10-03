@@ -1,0 +1,77 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.2.0/schema.json",
+  "name": "cddef9dd1e6923cc002a",
+  "position": {
+    "x": 358.57142857142861,
+    "y": 0,
+    "z": 1,
+    "height": 300,
+    "width": 349.28571428571433,
+    "tabOrder": 1
+  },
+  "visual": {
+    "visualType": "clusteredColumnChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Afdeling"
+                    }
+                  },
+                  "Property": "Navn"
+                }
+              },
+              "queryRef": "Afdeling.Navn",
+              "nativeQueryRef": "Navn",
+              "active": true
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Schema": "extension",
+                      "Entity": "Afdeling"
+                    }
+                  },
+                  "Property": "Antal Ansatte"
+                }
+              },
+              "queryRef": "Afdeling.Antal Ansatte",
+              "nativeQueryRef": "Antal Ansatte"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Schema": "extension",
+                    "Entity": "Afdeling"
+                  }
+                },
+                "Property": "Antal Ansatte"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

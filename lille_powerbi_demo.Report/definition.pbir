@@ -1,0 +1,9 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definitionProperties/2.0.0/schema.json",
+  "version": "4.0",
+  "datasetReference": {
+    "byConnection": {
+      "connectionString": "Data Source=\"powerbi://api.powerbi.com/v1.0/myorg/DP700 September 2025\";initial catalog=DimAnsatAfdeling;access mode=readonly;integrated security=ClaimsToken;semanticmodelid=c6565d27-59e8-4dce-8eae-cdf48134d2a4"
+    }
+  }
+}

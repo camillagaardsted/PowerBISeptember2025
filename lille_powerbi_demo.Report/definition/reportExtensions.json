@@ -1,0 +1,17 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/reportExtension/1.0.0/schema.json",
+  "name": "extension",
+  "entities": [
+    {
+      "name": "Afdeling",
+      "measures": [
+        {
+          "name": "Antal Ansatte",
+          "dataType": "Double",
+          "expression": "COUNTROWS(ansat)",
+          "formatString": "General Number"
+        }
+      ]
+    }
+  ]
+}

@@ -8,6 +8,12 @@
         {
           "name": "Antal Ansatte",
           "dataType": "Double",
+          "expression": "1.25*COUNTROWS(ansat)",
+          "formatString": "General Number"
+        }
+        ,{
+          "name": "Count Employees",
+          "dataType": "Double",
           "expression": "COUNTROWS(ansat)",
           "formatString": "General Number"
         }
